@@ -1,0 +1,3 @@
+@echo off
+"C:\Users\danes\AppData\Local\Python\pythoncore-3.14-64\python.exe" "C:\Users\danes\OneDrive\Documentos\Documento Python\conexion.py"
+exit
