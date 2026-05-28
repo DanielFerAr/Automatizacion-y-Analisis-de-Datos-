@@ -81,6 +81,10 @@ df.to_csv("data/ventas_clean.csv", index=False)
 ```
 ---
 ## 📊 Dashboard Operativo (Power BI)
+
+<p align="center"> <img width="1616" height="903" alt="image" src="https://github.com/user-attachments/assets/5c86ccda-472b-4736-be41-7614fd1fc0b4" />
+
+
 Incluye:
 - KPI: Ventas Totales
 - Gráfico: Ventas por Mes
