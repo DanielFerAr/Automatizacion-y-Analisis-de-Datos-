@@ -31,3 +31,75 @@ El dashboard muestra:
 - Ventas por región
 - Top productos
 - Segmentadores (fecha, región, producto)
+## 📂 Estructura del Repositorio
+📦 proyecto-automatizacion-analisis-datos
+```
+│
+├── data/
+│   ├── ventas_raw.csv
+│   ├── ventas_clean.csv
+│
+├── automation/
+│   ├── actualizar_dataset.py
+│   ├── actualizar_dataset.bat
+│
+├── excel/
+│   ├── analisis_ventas.xlsx
+│
+├── powerbi/
+│   ├── dashboard_operativo.pbix
+│
+└── README.md
+```
+---
+## 🧩 Flujo de Trabajo
+```
+1. Python procesa datos → genera ventas_clean.csv
+2. Excel valida y transforma (Power Query)
+3. Power BI consume el dataset limpio
+4. Dashboard muestra KPIs y análisis
+```
+---
+## 🐍 Script de Limpieza (Python)
+```
+import pandas as pd
+
+df = pd.read_csv("data/ventas_raw.csv")
+df["Fecha"] = pd.to_datetime(df["Fecha"], errors="coerce")
+df["Monto_Total"] = df["Cantidad"] * df["Precio"]
+df.dropna(subset=["Fecha", "ID_Producto"], inplace=True)
+df.to_csv("data/ventas_clean.csv", index=False)
+```
+---
+## 📊 Dashboard Operativo (Power BI)
+Incluye:
+- KPI: Ventas Totales
+- Gráfico: Ventas por Mes
+- Gráfico: Ventas por Región
+- Tabla: Detalle de ventas
+- Segmentadores: Fecha, Región, Producto
+---
+## ⚙️ Automatización Opcional (Windows Task Scheduler)
+Puedes automatizar el proceso ejecutando el script Python cada mañana:
+
+1. Crear archivo .BAT
+
+2. Programarlo en Task Scheduler
+
+3. Python genera el dataset limpio automáticamente
+
+Esto permite mantener el dashboard actualizado sin intervención manual.
+
+---
+## 🧪 Cómo Ejecutarlo
+1. Ejecutar el script Python
+```Código
+python automation/actualizar_dataset.py
+```
+2. Abrir el Excel
+Refrescar Power Query para validar los datos.
+
+3. Abrir Power BI
+Refrescar el dashboard para visualizar los resultados.
+
+## 🛠️ Tecnologías Utilizadas
