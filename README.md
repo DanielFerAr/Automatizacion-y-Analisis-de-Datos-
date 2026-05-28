@@ -1,3 +1,12 @@
+<div align="center">
+
+# 🚀 Automatización y Análisis de Datos  
+### Python • Excel • Power BI • Task Scheduler
+
+Procesamiento automático de datos, generación de datasets limpios y visualización profesional.
+
+</div>
+
 # Automatización-y-Análisis-de-Datos-
 ## Descripción del Proyecto
 Este proyecto implementa un flujo completo de automatización y análisis de datos, utilizando Python para procesar información de ventas, Excel para validación y Power BI para visualización.
