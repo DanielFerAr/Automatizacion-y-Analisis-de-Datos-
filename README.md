@@ -41,8 +41,8 @@ El dashboard muestra:
 - Top productos
 - Segmentadores (fecha, región, producto)
 ## 📂 Estructura del Repositorio
-📦 proyecto-automatizacion-analisis-datos
 ```
+📦 proyecto-automatizacion-analisis-datos
 │
 ├── data/
 │   ├── ventas_raw.csv
@@ -82,7 +82,7 @@ df.to_csv("data/ventas_clean.csv", index=False)
 ---
 ## 📊 Dashboard Operativo (Power BI)
 
-<p align="center"> <img width="1609" height="900" alt="image" src="https://github.com/user-attachments/assets/ff3f9fa2-c067-456e-b677-29a14174245f" />
+<p align="center"> <img width="1522" height="853" alt="image" src="https://github.com/user-attachments/assets/4642ad4f-7548-4cba-ad46-4194732823f7" />
 
 
 
