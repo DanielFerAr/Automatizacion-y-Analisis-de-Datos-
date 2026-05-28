@@ -93,13 +93,30 @@ Esto permite mantener el dashboard actualizado sin intervención manual.
 ---
 ## 🧪 Cómo Ejecutarlo
 1. Ejecutar el script Python
+
 ```Código
 python automation/actualizar_dataset.py
 ```
 2. Abrir el Excel
+
 Refrescar Power Query para validar los datos.
 
-3. Abrir Power BI
+4. Abrir Power BI
 Refrescar el dashboard para visualizar los resultados.
 
 ## 🛠️ Tecnologías Utilizadas
+| Tecnología | Uso  |
+| ------------- | ------------- |
+| Python 3.14.5  | Limpieza y automatización  |
+| Pandas  | 	Transformación de datos  |
+| Excel + Power Query  | Validación y reportes  |
+| Power BI | Dashboard operativo  |
+| Task Scheduler | Automatización diaria  |
+## 👨‍💻 Autor
+Daniel  
+
+Proyecto orientado a demostrar habilidades en:
+- Automatización básica
+- Análisis de datos
+- Integración Python + Excel + Power BI
+- Construcción de dashboards operativos
